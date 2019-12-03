@@ -183,7 +183,19 @@ android_app_import {
 }
 
 android_app_import {
+	name: "uceShimService",
+	owner: "xiaomi",
+	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "qcrilmsgtunnel",
+	name: "dpmserviceapp",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
@@ -193,6 +205,31 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 }
+
+android_app_import {
+	name: "ims",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "xiaomi",
+        apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
 
 dex_import {
 	name: "WfdCommon",
